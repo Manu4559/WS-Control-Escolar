@@ -22,5 +22,17 @@ namespace WS_Control_Escolar
         {
             return "Hola a todos";
         }
+        [WebMethod]
+        public bool alumnoGuardad()
+        {
+            try
+            {
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
